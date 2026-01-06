@@ -31,6 +31,7 @@ public class Position {
 
     public Position() {
         longitude = Longitude.setLongitude();
+        latitude = Latitude.setLatitude();
     }
 
     public static int getMethod() {

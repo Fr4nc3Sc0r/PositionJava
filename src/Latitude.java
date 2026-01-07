@@ -8,8 +8,8 @@ import java.util.Scanner;
 /**
  *
  * @author franc
- */ */
-public class Latitude extends Position{
+ */
+public class Latitude extends Position {
     private static int grade;
     private static char orientament;
     private static int method = Position.getMethod();
@@ -20,8 +20,28 @@ public class Latitude extends Position{
         this.orientament = orientament;
     }
 
-    public int getGrade() {
+    public static int getGrade() {
         return grade;
+    }
+
+    public static void setGrade(int grade) {
+        Latitude.grade = grade;
+    }
+
+    public static char getOrientament() {
+        return orientament;
+    }
+
+    public static void setOrientament(char orientament) {
+        Latitude.orientament = orientament;
+    }
+
+    public static int getMethod() {
+        return method;
+    }
+
+    public static void setMethod(int method) {
+        Latitude.method = method;
     }
 
     public static Latitude setLatitude() {
@@ -47,5 +67,5 @@ public class Latitude extends Position{
 
         return latitude;
     }
-  
+
 }

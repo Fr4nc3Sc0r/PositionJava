@@ -21,7 +21,7 @@ public class Longitude extends Position {
         this.orientament = orientament;
     }
 
-    public int getGrade() {
+    public static int getGrade() {
         return grade;
     }
 
@@ -47,6 +47,26 @@ public class Longitude extends Position {
         Longitude longitude = new Longitude(grade, orientament);
 
         return longitude;
+    }
+
+    public static void setGrade(int grade) {
+        Longitude.grade = grade;
+    }
+
+    public static char getOrientament() {
+        return orientament;
+    }
+
+    public static void setOrientament(char orientament) {
+        Longitude.orientament = orientament;
+    }
+
+    public static int getMethod() {
+        return method;
+    }
+
+    public static void setMethod(int method) {
+        Longitude.method = method;
     }
 
 }// fine classe

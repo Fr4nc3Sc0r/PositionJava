@@ -1,8 +1,9 @@
-package posizione;
+package atletica;
 
 import java.time.LocalDateTime;
+import java.io.Serializable;
 
-public class Posizione {
+public class Posizione implements Serializable{
     private Latitudine latitudine;
     private Longitudine longitudine;
     private LocalDateTime dataOra;
@@ -13,15 +14,15 @@ public class Posizione {
         dataOra = LocalDateTime.now();
     }
 
-    public getDecimale()
+    public Posizione()
     {
 
     }
 
     public static void getSessaDecimale(Posizione posizione) {
-        Double latitudine = posizione.getLatitudine().getLatitudine(); // otteniamo i valori di tipo double
+        double latitudine = posizione.getLatitudine().getLatitudine(); // otteniamo i valori di tipo double
                                                                        // inizializzati dal costruttore
-        Double longitudine = posizione.getLongitudine().getLongitudine();
+        double longitudine = posizione.getLongitudine().getLongitudine();
 
         int gradi;
         int primi;
@@ -86,5 +87,7 @@ public class Posizione {
     public Longitudine getLongitudine() {
         return longitudine;
     }
+    
+    
 
 }

@@ -1,8 +1,9 @@
-package posizione;
+package atletica;
 
 import java.util.Scanner;
+import java.io.Serializable;
 
-public class Latitudine {
+public class Latitudine implements Serializable{
     private int gradi;
     private int primi;
     private int secondi;
